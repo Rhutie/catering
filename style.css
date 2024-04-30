@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hero header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    height: 50px;
+    width: 99%;
+    padding: 0 10px;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.46);
+}
+
+.hero header p a{
+    text-decoration:none;
+    padding: 10px 12px;
+    letter-spacing: 4px;
+    color: black;
+}
+
+.hero header p a:hover{
+    background-color: #b1b1b1;
+}
+
+.hero header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1%;
+}
+
+.hero header ul li{
+    list-style-type: none;
+}
+
+.hero header ul li a{
+    text-decoration:none;
+    padding: 10px 12px;
+    letter-spacing: 4px;
+    color: black; 
+}
+
+.hero header ul li a:hover{
+    background-color: #b1b1b1;
+}
+
+.hero .banner{
+    position: relative;
+}
+
+.hero .banner img{
+    width: 1483px;
+}
+
+.hero .banner p{
+    position: absolute;
+    left: 4%;
+    bottom:10% ;
+    font-size: 40px;
+    color: #6f6c6c;
+}
+
+.hero .about{
+    padding: 80px 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+}
+
+.hero .about .left img{
+    width: 500px;
+}
+
+.hero .about .right .head{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.hero .about .right .mid{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 35px 0 20px;   
+}
+
+.hero .about .right .up{
+    font-size: 18px;
+    line-height:1.5; 
+    margin-bottom: 30px;  
+}
+
+.hero .about .right span{
+   padding: 5px 10px;
+   background-color: #eaeaea;  
+}
+
+.hero .about .right .down{
+    font-size: 18px;
+    line-height:1.5; 
+    color:#b1b1b1 ;
+}
+
+.hr {
+    margin: 50px 12%; 
+    height: 1px; 
+    background-color: rgba(0, 0, 0, 0.129); 
+    width: 76%;
+}
+
+.hero .menu{
+    padding: 80px 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%; 
+}
+
+.hero .menu .left .head{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding-bottom: 60px;
+}
+
+.hero .menu .right img{
+    width: 500px;
+}
+
+.hero .menu .left .item{
+    font-size: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 4px;
+}
+
+.hero .menu .left .price{
+    margin-bottom: 50px;
+    color: rgb(120, 120, 120);
+}
+
+.hero .contact{
+    padding: 40px 12%; 
+}
+
+.hero .contact .head{
+    font-size: 40px;
+    letter-spacing: 5px;
+    padding-bottom: 60px;
+}
+
+.hero .contact .cat{
+    padding: 30px 0;
+    color: rgb(35, 113, 161);
+}
+
+.hero .contact form{
+    padding: 50px 0;
+}
+
+.hero .contact form input{
+    width: 100%;
+    height: 50px;
+    text-indent: 5px;
+    margin: 5px 0;
+    border-width: 0 0 1px 0;
+}
+
+.hero .contact form button{
+    padding: 7px 12px;
+    margin-top: 20px ;
+    border: none;
+    background-color: #eaeaea;
+}
+
+.hero .contact form button:hover{
+    background-color: #a5a5a5;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p a{
+    color: black;
+}
+
+footer p a:hover{
+    color: green;
+}
+
+
+@media screen and (max-width:1024px) {
+    .hero header{
+        width: 99%;
+    }
+
+    .hero .banner img{
+        width: 1300px;
+    }
+
+    .hero .about{
+        padding: 80px 5%;
+    }
+    
+    .hero .about .left{
+        margin-left: 30%;
+    }
+
+    .hero .about .left img{
+        width: 500px;
+    }
+    
+    .hero .about .right .head{
+        width: 600px;
+    }
+
+    .hr {
+        margin: 50px 5%;  
+        width: 110%;
+    }
+    
+    .hero .menu{
+        padding: 80px 5%; 
+    }
+    
+    .hero .menu .right{
+        margin-right: -30%;
+    }
+
+    .hero .contact{
+        padding: 40px 5%; 
+        width: 117%;
+    }
+    
+    footer{
+        width: 127%;
+    }       
+}
+
+
+@media screen and (max-width:768px) {
+    .hero header{
+        width: 99%;
+    }
+
+    .hero .banner img{
+        width: 1200px;
+    }
+
+    .hero .about{
+        padding: 80px 5%;
+    }
+    
+    .hero .about .left{
+        margin-left: 65%;
+    }
+
+
+    .hr {  
+        width: 146%;
+    }
+    
+    .hero .menu{
+        padding: 80px 5%; 
+    }
+    
+    .hero .menu .right{
+        margin-right: -65%;
+    }
+
+    .hero .contact{
+        padding: 40px 5%; 
+        width: 146%;
+    }
+    
+    footer{
+        width: 156%;
+    }  
+        
+}
+
+@media screen and (max-width:430px) {
+
+    .hero .banner img{
+        width: 893px;
+    }
+    
+    .hero .about .left{
+        margin-left: 65%;
+    }
+
+    .hero .about .left{
+        margin-left: 120%;
+    }
+
+    .hero .about .left img{
+        width: 400px;
+    }
+    
+    .hero .about .right .head{
+        width: 350px;
+    }
+
+    .hero .about .right .mid{
+        padding: 15px 0 10px;
+    }
+
+    .hero .about .right .up,  .hero .about .right .down{
+        line-height: 1.2;
+    }
+
+
+    .hr {  
+        width: 200%;
+    }
+    
+    .hero .menu .right{
+        margin-right: -120%;
+    }
+
+    .hero .contact{
+        padding: 40px 5%; 
+        width: 200%;
+    }
+    
+    footer{
+        width: 210%;
+    }  
+        
+}
